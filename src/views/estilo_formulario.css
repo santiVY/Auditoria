@@ -1,0 +1,24 @@
+body{
+    background-color: rgb(62, 158, 161);
+    padding: 5%;
+}
+
+label{
+    font-size: 100%;
+    padding: 0%;
+    margin: 2%;
+    color: black;
+    text-align: justify;
+}
+
+
+.titulo{
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin-bottom: 10%;
+}
+
+.card-panel{
+    padding: 10%;
+    opacity: 0.8;
+}
