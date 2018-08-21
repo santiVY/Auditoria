@@ -1,0 +1,40 @@
+body{
+    background-image: url(../img/blanca.jpg);
+    background-size: cover;
+    padding: 5%;
+}
+
+label{
+    font-size: 100%;
+    padding: 0%;
+    margin: 2%;
+    color: black;
+    text-align: justify;
+}
+
+
+.card-content{
+    padding: 20%;
+    margin: 5%;
+}
+
+.card-action{
+   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+   text-align: center;
+   font-size: 3vw;
+   color: #fff;
+}
+
+.formulario{
+    opacity: 0.95;
+}
+
+.formulario button:hover{
+    padding: 0px 20px;
+}
+
+.formulario .card-content  .pregunta{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 17px;;
+    color: rgb(8, 8, 8);
+}

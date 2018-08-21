@@ -1,29 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/css/materialize.min.css">
-     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/js/materialize.min.js"></script>
-     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <title>iush</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/css/materialize.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/js/materialize.min.js"></script>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="../../css/estilo_iush.css " type="text/css">
+  <title>iush</title>
 </head>
+
 <body>
-    
-    <div class="row">
-        <form class="col s12">
-          <div class="row">
-            <div class="input-field col s6">
-              <input id="last_name" type="text" class="validate">
-              <label for="last_name">Ingrese Nit de la IUSH</label>
-              <button class="btn waves-effect waves-light" type="submit" name="">Guardar
-                <i class="material-icons right">send</i>
-              </button>
-            </div>
+
+  <div class="row empresa">
+    <div class="col s12 l4 offset-l4">
+      <div class="card">
+
+        <div class="card-action blue">
+          <h3>IUSH</h3>
+        </div>
+
+        <div class="card-content">
+          <div class="input-field">
+            <label for="nit">Ingresa el nit:</label>
+            <input class="validate" type="number" id="nit">
           </div>
-        </form>
+          <br>
+
+          <div class="form-field right-align">
+            <button class="btn waves-effect blue" type="submit" name="">Enviar
+              <i class="material-icons right">send</i>
+            </button>
+          </div>
+          <br>
+
+        </div>
       </div>
-      
+    </div>
+
 </body>
+
 </html>

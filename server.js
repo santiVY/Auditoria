@@ -15,7 +15,7 @@ app.get("/",function(req,res){ //.get es un metodo el objeto en donde se le asig
 
 
 // obtiene la ruta del directorio publico donde se encuentran los elementos estaticos (css, js).
-var publicPath = path.resolve(__dirname, 'views'); //path.join(__dirname, 'public'); también puede ser una opción
+var publicPath = path.resolve(__dirname + '/css'); //path.join(__dirname, 'public'); también puede ser una opción
 
 // Para que los archivos estaticos queden disponibles.
 app.use(express.static(publicPath));
@@ -71,4 +71,5 @@ app.get("/preguntas_adquisicion",function(req,res){
 
 app.listen(3000, function(){ //definirelpuerto 3000 para escuchar la app
     console.log("funcione!");
+    //console.log(publicPath);
 });
