@@ -15,16 +15,14 @@ app.get("/",function(req,res){ //.get es un metodo el objeto en donde se le asig
 
 
 // obtiene la ruta del directorio publico donde se encuentran los elementos estaticos (css, js).
-var publicPath = path.resolve(__dirname + '/css'); //path.join(__dirname, 'public'); también puede ser una opción
-
 // Para que los archivos estaticos queden disponibles.
-app.use(express.static(publicPath));
+app.use(express.static("archivos"));
 
 
 app.get("/index",function(req,res){ //.get es un metodo el objeto en donde se le asignan diferentes parametros incluso otro tipo funcion
     res.sendFile(
         path.join(
-            __dirname, '/src/views/index.html'
+            __dirname, '/archivos/index.html'
         )
     ); 
 });
@@ -32,7 +30,7 @@ app.get("/index",function(req,res){ //.get es un metodo el objeto en donde se le
 app.get("/iush",function(req,res){ 
     res.sendFile(
         path.join(
-            __dirname, '/src/views/iush.html'
+            __dirname, '/archivos/src/views/iush.html'
         )
     ); 
 });
@@ -40,7 +38,7 @@ app.get("/iush",function(req,res){
 app.get("/preguntas_seguridad",function(req,res){ 
     res.sendFile(
         path.join(
-            __dirname, '/src/views/preguntas_seguridad.html'
+            __dirname, '/archivos/src/views/preguntas_seguridad.html'
         )
     ); 
 });
@@ -48,7 +46,7 @@ app.get("/preguntas_seguridad",function(req,res){
 app.get("/preguntas_gestion",function(req,res){ 
     res.sendFile(
         path.join(
-            __dirname, '/src/views/preguntas_gestion.html'
+            __dirname, '/archivos/src/views/preguntas_gestion.html'
         )
     ); 
 });
@@ -56,7 +54,7 @@ app.get("/preguntas_gestion",function(req,res){
 app.get("/preguntas_control",function(req,res){ 
     res.sendFile(
         path.join(
-            __dirname, '/src/views/preguntas_control.html'
+            __dirname, '/archivos/src/views/preguntas_control.html'
         )
     ); 
 });
@@ -64,7 +62,7 @@ app.get("/preguntas_control",function(req,res){
 app.get("/preguntas_adquisicion",function(req,res){ 
     res.sendFile(
         path.join(
-            __dirname, '/src/views/preguntas_adquisicion.html'
+            __dirname, '/archivos/src/views/preguntas_adquisicion.html'
         )
     ); 
 });
