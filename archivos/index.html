@@ -11,33 +11,32 @@
 <body>
     <nav>
         <div class="nav-wrapper blue white-text">
-          <a href="/index" class="brand-logo">Logo</a>
+          <a href="/index" class="brand-logo">SYH</a>
           <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
           <ul class="right hide-on-med-and-down">
-            <li><a href="/iush">IUSH</a></li>
-            <li><a href="/preguntas_seguridad">SEGURIDAD FISICA Y DE ENTORNO</a></li>
-            <li><a href="/preguntas_gestion">GESTION DE COMUNICACIONES Y OPERACIONES</a></li>
-            <li><a href="/preguntas_control">CONTROL DE ACCESO</a></li>
-            <li><a href="/preguntas_adquisicion">ADQUISICIÓN, DESARROLLO Y MANTENIMIENTO DE SISTEMAS DE INFORMACIÓN</a></li>
+              <li><a href="/iush">IUSH</a></li>
+              <li><a href="/preguntas_seguridad">SEGURIDAD FISICA</a></li>
+              <li><a href="/preguntas_gestion">COMUNICACIONES Y OPERACIONES</a></li>
+              <li><a href="/preguntas_control">CONTROL DE ACCESO</a></li>
+              <li><a href="/preguntas_adquisicion">AMD DE SISTEMAS DE INFORMACION</a></li>
           </ul>
         </div>
       </nav>
     
-      <ul class="sidenav blue white-text" id="mobile-demo">
+      <ul class="sidenav" id="mobile-demo">
         <li><a href="/iush">IUSH</a></li>
-        <li><a href="/preguntas_seguridad">SEGURIDAD FISICA Y DE ENTORNO</a></li>
-        <li><a href="/preguntas_gestion">GESTION DE COMUNICACIONES Y OPERACIONES</a></li>
+        <li><a href="/preguntas_seguridad">SEGURIDAD FISICA</a></li>
+        <li><a href="/preguntas_gestion">COMUNICACIONES Y OPERACIONES</a></li>
         <li><a href="/preguntas_control">CONTROL DE ACCESO</a></li>
-        <li><a href="/preguntas_adquisicion">ADQUISICIÓN, DESARROLLO Y MANTENIMIENTO DE SISTEMAS DE INFORMACIÓN</a></li>
+        <li><a href="/preguntas_adquisicion">AMD DE SISTEMAS DE INF.</a></li>
       </ul>
 
-      <script type="text/javascript" src="materialize/js/materialize.min.js"></script>
-      <script type="text/javascript">
-            $(document).ready(function(){
-                    $('.sidenav').sidenav();
-            });
-      </script>
-
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/js/materialize.min.js"></script>
+    <script>
+      var elem = document.querySelector('.sidenav');
+      var instance = new M.Sidenav(elem);
+    </script>
 </body>
 </html>
 
